@@ -1,0 +1,19 @@
+body{
+    font-family: arial,helvetica;
+    color: #fff;
+    text-align:center;
+}
+
+h1{
+    font-size: 6em;
+    font-size: calc(2em + 2vw);
+    margin:0;
+}
+
+/* Backgrounds colors for sections */
+
+
+
+.fp-section:nth-child(3){
+    background-image: linear-gradient(128deg,#fc40ff,#543fff);
+}
