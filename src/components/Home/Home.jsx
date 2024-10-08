@@ -3,9 +3,11 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "./styles.css";
 import img from "./firstpic3.jpg"
 import ix from "./bmwix.jpg"
+import bmwm4 from "./bmwm4.jpg"
 
 
 function Home() {
+
   return (
     <div>
 
@@ -18,6 +20,10 @@ function Home() {
           licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
           render={() => (
             <ReactFullpage.Wrapper>
+
+
+
+
               {/* first slide */}
               <div className="section flex h-[35rem]">
                 <div className="flex justify-center items-center ">
@@ -35,11 +41,13 @@ function Home() {
 
 
               {/* other slides */}
-              <div className="section">
+              <div className="section py-12 ">
                 {/* slide2 */}
-                <div className="slide flex h-[35rem] ">
-                  <div className="flex">
-                    <div className="w-6/12 "><img className="ms-12 rounded-md" src={ix} alt="" /></div>
+                <div className="slide flex h-[37rem] items-center  ">
+                  <div className="flex  my-10 py-20">
+                    <div className="w-6/12">
+                      <img className="ms-12 rounded-md" src={ix} alt="" />
+                    </div>
                     <div className="w-6/12 flex justify-center items-center">
                       <p className="w-10/12 text-4xl font-semibold"> Enjoy nature consciously – sustainable travel in the BMW iX </p>
                     </div>
@@ -49,12 +57,16 @@ function Home() {
 
 
                 {/* slide2.2 */}
-                <div className="slide"><h1>Slide 2.2</h1></div>
+                <div className="slide  ">
+
+                </div>
+
+
                 {/*slide2.3  */}
                 <div className="slide"><h1>Slide 2.3</h1></div>
               </div>
               {/* slide3 */}
-              <div className="section"><h1>Section 3</h1></div>
+
 
             </ReactFullpage.Wrapper>
           )}

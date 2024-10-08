@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Home from "./components/Home/Home"
 import Homee from "./components/Home/Homee"
-import Items from "./components/Items/Items"
+import Items from "./components/Models/Models"
 import Aboutus from "./components/Aboutus/Aboutus"
 import logo from "./assets/bmwlogo.png"
 function App() {
@@ -9,7 +9,7 @@ function App() {
 
     <section className="flex flex-wrap  justify-center container-fluid">
       <Router>
-        <div className="navbar bg-black relative z-10">
+        <div className="navbar bg-black relative z-40 fixed">
           {/* logo */}
           <div className="flex-1">
             <a className="btn btn-ghost h-full"><img className="w-16" src={logo} alt="" /></a>
