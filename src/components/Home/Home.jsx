@@ -3,7 +3,7 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import "./styles.css";
 import img from "./firstpic3.jpg"
 import ix from "./bmwix.jpg"
-import bmwm4 from "./bmwm4.jpg"
+
 
 
 function Home() {
@@ -25,6 +25,8 @@ function Home() {
 
 
               {/* first slide */}
+
+
               <div className="section flex h-[35rem]">
                 <div className="flex justify-center items-center ">
                   <div className=" w-5/12 flex items-center justify-center  ">

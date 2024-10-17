@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.44",
+    "aos": "^3.0.0-beta.6",
     "fullpage.js": "^4.0.29",
+    "js-cookie": "^3.0.5",
     "react": "^18.3.1",
+    "react-cookie": "^7.2.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2"
   },
