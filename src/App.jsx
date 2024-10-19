@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import Home from "./components/Home/Home"
-import Homee from "./components/Home/Homee"
+
 import Items from "./components/Models/Models"
 import Aboutus from "./components/Aboutus/Aboutus"
 import logo from "./assets/bmwlogo.png"
@@ -9,7 +9,7 @@ function App() {
 
     <section className="flex flex-wrap  justify-center container-fluid">
       <Router>
-        <div className="navbar bg-black relative z-40 fixed">
+        <div id="header" className="navbar bg-black z-40 fixed">
           {/* logo */}
           <div className="flex-1">
             <a className="btn btn-ghost h-full"><img className="w-16" src={logo} alt="" /></a>
@@ -29,9 +29,7 @@ function App() {
                 <Link to='/aboutus'>About Us</Link>
               </li>
 
-              <li>
-                <Link to='/Homee'>Home2</Link>
-              </li>
+
 
             </ul>
           </div>
@@ -41,7 +39,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/items" element={<Items />} />
           <Route path="/aboutus" element={<Aboutus />} />
-          <Route path="/Homee" element={<Homee />} />
+ 
 
 
         </Routes>

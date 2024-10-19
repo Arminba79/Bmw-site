@@ -18,7 +18,7 @@ function Models() {
  
 
   return (
-    <section className=" flex flex-wrap justify-center gap-7 my-10  ">
+    <section className=" flex flex-wrap justify-center gap-7 my-20  ">
 
       <div className='flex gap-3  w-full justify-center'>
         <button className='btn btn-active btn-neutral w-28' onClick={ISeries}>I Series</button>

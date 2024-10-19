@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.44",
+    "animejs": "^3.2.2",
     "aos": "^3.0.0-beta.6",
     "fullpage.js": "^4.0.29",
     "js-cookie": "^3.0.5",
