@@ -58,9 +58,9 @@ function Home() {
               {/*Slide 1 */}
 
 
-              <div className="section relative bg-cover" style={{backgroundImage: `url(${sr7})`}}>
+              <div className="section relative bg-cover opacity-80" style={{backgroundImage: `url("https://www.wsupercars.com/wallpapers-wide/BMW/2023-BMW-M3-Competition-Touring-005-1440w.jpg")`}}>
 
-                <div className="absolute top-28 flex flex-col w-full items-start text-black text-5xl font-bold  ">
+                <div className="absolute top-28 flex flex-col w-full items-start text-white text-5xl font-bold  ">
                   <span className="animesp1">Power and Beauty, Together</span>
                   <span className="animesp2">Advanced Technology for Your Comfort</span>
                 </div>

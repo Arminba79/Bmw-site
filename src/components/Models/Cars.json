@@ -5,7 +5,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-ix-flow-e-ink-wallpapers-wp10520235",
         "Series": "I Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 2,
@@ -14,7 +14,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-i7-wallpapers-wp11913078",
         "Series": "I Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 3,
@@ -23,7 +23,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-i5-wallpapers-wp12879349",
         "Series": "I Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 4,
@@ -32,7 +32,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-i4-wallpapers-wp6414073",
         "Series": "I Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 5,
@@ -41,7 +41,7 @@
         "imgLink": "https://wallpapercave.com/download/black-bmw-i8-wallpapers-wp14561710",
         "Series": "I Series",
         "door": "2 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 6,
@@ -50,7 +50,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-i3-wallpapers-wp4298696",
         "Series": "I Series",
         "door": "2 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 7,
@@ -59,7 +59,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-m5-cs-2021-hd-wallpapers-wp8673019",
         "Series": "M Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 8,
@@ -68,7 +68,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-m8-2024-wallpapers-wp13679672",
         "Series": "M Series",
         "door": "2 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 9,
@@ -77,17 +77,9 @@
         "imgLink": "https://wallpapercave.com/download/bmw-x7-desktop-wallpapers-wp6416494",
         "Series": "M Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
-    {
-        "id": 10,
-        "price": "55.300 $",
-        "modelName": "BMW M5 E60",
-        "imgLink": "https://wallpapercave.com/download/bmw-e60-4k-wallpapers-wp12751403",
-        "Series": "M Series",
-        "door": "4 door",
-        "class":"sedan"
-    },
+
     {
         "id": 11,
         "price": "55.300 $",
@@ -95,7 +87,7 @@
         "imgLink": "https://wallpapercave.com/download/2023-bmw-m3-wallpapers-wp12115635",
         "Series": "M Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 12,
@@ -104,7 +96,7 @@
         "imgLink": "https://wallpapercave.com/download/bmw-m6-desktop-wallpapers-wp5967164",
         "Series": "M Series",
         "door": "2 door",
-        "class":"sedan"
+        "class": "sedan"
     },
     {
         "id": 13,
@@ -113,6 +105,9 @@
         "imgLink": "https://wallpapercave.com/download/bmw-m7-2023-wallpapers-wp11272630",
         "Series": "M Series",
         "door": "4 door",
-        "class":"sedan"
+        "class": "sedan"
     }
+
+
+
 ]
