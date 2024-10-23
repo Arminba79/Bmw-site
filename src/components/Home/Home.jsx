@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import "./styles.css";
 
 import ix from "./Assests/bmwix.jpg"
-import sr7 from "./Assests/Series7.jpg"
+
 
 import ImageSlide2 from "./Assests/slide2.jpg"
 

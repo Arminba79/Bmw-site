@@ -18,10 +18,10 @@ function Models() {
 
 
   return (
-    <section className=" flex flex-wrap justify-center gap-7 pb-10  ">
+    <section className=" flex flex-wrap justify-center gap-7 pb-10 ">
       {/* Carosell */}
 
-      <div className="carousel w-full bg-red-600">
+      <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <img
             src="https://www.wsupercars.com/wallpapers-wide/BMW/2022-BMW-M5-CS-004-1440w.jpg"
