@@ -17,51 +17,36 @@ import anime from 'animejs/lib/anime.es.js';
 function Home() {
 
   useEffect(() => {
-    anime.timeline({
+    const timeline = anime.timeline({
       easing: 'easeOutExpo',
+      duration: 750,
+    });
 
-
-    })
+    timeline
       .add({
         targets: '.animesp1',
-        translateX: 350,
-
-
-
+        translateX: [0, 350],
+        opacity: [0, 1],
       })
       .add({
         targets: '.animesp2',
-        translateX: 350,
-
-      })
+        translateX: [0, 350],
+        opacity: [0, 1],
+        offset: '-=500', // شروع دومین انیمیشن قبل از اتمام اولین انیمیشن
+      });
   }, []);
+
 
 
   return (
     <div >
-      <div className="container w-screen my-16 flex flex-col xl:hidden">
-        <div className="flex flex-col bg-black">
 
-          <div className="flex flex-col text-3xl font-semibold py-10 ">
-            <span>Power and Beauty, Together</span>
-            <span>Advanced Technology for Your Comfort</span>
-          </div>
-
-          <div>
-            1
-          </div>
-
-          <div>
-
-          </div>
-
-        </div>
-        <div className="bg-blue-500">2</div>
-      </div>
+      {/* Mobile and tablet */}
 
 
 
-      <div className="container-fluid w-full bg-black hidden xl:flex " >
+
+      <div className="container-fluid w-full bg-black flex " >
 
         <ReactFullpage
           debug
@@ -71,6 +56,7 @@ function Home() {
           easingcss3="cubic-bezier(0.175, 0.885, 0.320, 1.275)"
           licenseKey="xxxxxxxxxxxxxxxxxxxxxxxxx"
           render={() => (
+            // large screen
             <ReactFullpage.Wrapper>
 
 
@@ -78,8 +64,8 @@ function Home() {
 
               {/*Slide 1 */}
 
-
-              <div className="section bg-cover relative opacity-80  " style={{ backgroundImage: `url("https://www.wsupercars.com/wallpapers-wide/BMW/2023-BMW-M3-Competition-Touring-005-1440w.jpg")` }}>
+              {/* large screen */}
+              <div className="section bg-cover relative opacity-80 hidden xl:flex " style={{ backgroundImage: `url("https://www.wsupercars.com/wallpapers-wide/BMW/2023-BMW-M3-Competition-Touring-005-1440w.jpg")` }}>
 
                 <div className="absolute top-28 flex-col w-full items-start text-white text-5xl font-bold  flex ">
                   <span className="animesp1">Power and Beauty, Together</span>
@@ -88,30 +74,50 @@ function Home() {
                 {/* <img src={sr7} alt="" /> */}
 
               </div>
+              {/* mobile and tablet screen */}
+              <div className="section flex xl:hidden  items-start">
+                <div className="flex flex-col  ">
+                  {/* text Box */}
+                  <div className="flex flex-col text-3xl font-semibold h-96 ">
+                    <span>Power and Beauty, Together</span>
+                    <span>Advanced Technology for Your Comfort</span>
+                  </div>
+                </div>
+
+              </div>
 
 
               {/*Slide 2 */}
-              <div className="section flex ">
-                <div className="flex flex-wrap justify-center items-center ">
-                  <div className=" w-7/12 flex items-center h-full">
-                    <div className="w-full flex justify-center h-96 bg-cover opacity-30 hover:opacity-70 transition rounded-lg" style={{ backgroundImage: `url(${ImageSlide2})` }}>
-                      <span className="text-3xl mt-5"> The BMW journey to the mobility of the future </span>
+              <div className="section flex flex-wrap">
+                <div className="flex flex-wrap justify-center items-center w-full">
+                  <div className="w-full md:w-7/12 flex items-center">
+                    <div
+                      className=" w-full h-96 flex justify-center  bg-cover opacity-30 hover:opacity-70 transition rounded-lg"
+                      style={{ backgroundImage: `url(${ImageSlide2})` }}
+                    >
+                      <span className="text-xl md:text-3xl mt-24 xl:mt-5">The BMW journey to the mobility of the future</span>
                     </div>
                   </div>
-
-                  <div className="w-5/12 flex flex-col justify-evenly h-max ">
-                    <div style={{ backgroundImage: `url("https://images.unsplash.com/photo-1665950798334-6251a5cdb1e9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")` }}
-                      className="rounded-lg  w-full h-80 opacity-30 hover:opacity-70 transition bg-cover flex justify-center">
-                      <span className="text-4xl mt-14 text-white">You are safe</span>
+                  <div className="w-full md:w-5/12 flex flex-col justify-evenly h-max">
+                    <div
+                      style={{
+                        backgroundImage: `url("https://images.unsplash.com/photo-1665950798334-6251a5cdb1e9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")`,
+                      }}
+                      className="rounded-lg w-full h-80 opacity-30 hover:opacity-70 transition bg-cover flex justify-center"
+                    >
+                      <span className="text-xl md:text-4xl mt-14 text-white">You are safe</span>
                     </div>
-                    <div className="rounded-lg flex justify-center bg-green-400 w-full h-80 bg-cover opacity-30 hover:opacity-70 transition" style={{ backgroundImage: `url("https://www.ezoo.uk/wp-content/uploads/2022/05/Charging.jpg")` }}>
-                      <span className="text-4xl mt-5 text-white">We love Our World</span>
+                    <div
+                      className="rounded-lg flex justify-center bg-green-400 w-full h-80 bg-cover opacity-30 hover:opacity-70 transition"
+                      style={{ backgroundImage: `url("https://www.ezoo.uk/wp-content/uploads/2022/05/Charging.jpg")` }}
+                    >
+                      <span className="text-xl md:text-4xl mt-5 text-white">We love Our World</span>
                     </div>
                   </div>
-
-
                 </div>
               </div>
+
+
 
 
 
@@ -119,30 +125,29 @@ function Home() {
 
 
               {/*Slide 3 */}
-              <div className="section py-12 ">
+              <div className="section py-12">
                 {/* slide 3 */}
-                <div className="slide flex  items-center  ">
-                  <div className="flex  my-10 py-20">
-                    <div className="w-6/12">
-                      <img className="ms-12 rounded-md" src={ix} alt="" />
+                <div className="slide flex items-center justify-center flex-wrap">
+                  <div className="flex my-10 py-20 w-full flex-wrap">
+                    <div className="w-full lg:w-6/12 p-4">
+                      <img className="w-full rounded-md" src={ix} alt="BMW iX" />
                     </div>
-                    <div className="w-6/12 flex justify-center items-center">
-                      <p className="w-10/12 text-4xl font-semibold"> Enjoy nature consciously – sustainable travel in the BMW iX </p>
+                    <div className="w-full lg:w-6/12 flex justify-center items-center p-4">
+                      <p className="text-xl lg:text-4xl font-semibold text-center">Enjoy nature consciously – sustainable travel in the BMW iX</p>
                     </div>
                   </div>
                 </div>
-
-
-
                 {/* slide3.2 */}
-                <div className="slide  ">
-
+                <div className="slide">
+                  {/* Add more content or leave it empty */}
                 </div>
-
-
-                {/*slide3.3  */}
-                <div className="slide"><h1>Slide 2.3</h1></div>
+                {/* slide3.3 */}
+                <div className="slide">
+                  <h1 className="text-center">Slide 2.3</h1>
+                </div>
               </div>
+
+
 
 
 
