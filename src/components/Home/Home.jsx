@@ -32,7 +32,7 @@ function Home() {
         targets: '.animesp2',
         translateX: [0, 350],
         opacity: [0, 1],
-        offset: '-=500', // شروع دومین انیمیشن قبل از اتمام اولین انیمیشن
+        offset: '-=500',
       });
   }, []);
 
