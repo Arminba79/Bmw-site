@@ -23,10 +23,10 @@ npm run dev
 ```
 
 
-![Screenshot](./public/ScreenShot/1.png)
+![Screenshot](./public/ScreenShot/1.jpg)
 
-![Screenshot](./public/ScreenShot/2.png)
+![Screenshot](./public/ScreenShot/2.jpg)
 
-![Screenshot](./public/ScreenShot/3.png)
+![Screenshot](./public/ScreenShot/3.jpg)
 
-![Screenshot](./public/ScreenShot/4.png)
+![Screenshot](./public/ScreenShot/4.jpg)
